@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{REVIEW_DATE}} spaced-review session.">
+  <title>Review · {{REVIEW_DATE}}</title>
+  <link rel="stylesheet" href="../00_Templates/lesson.css">
+</head>
+<body data-lesson-id="REVIEW-{{REVIEW_DATE_ISO}}">
+  <div class="reading-progress" role="progressbar" aria-label="Review progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+    <span data-reading-progress></span>
+  </div>
+
+  <nav class="topbar" aria-label="Review navigation">
+    <a class="back-link" href="../index.html">← Learning home</a>
+    <div class="reading-controls" aria-label="Reading size">
+      <button class="control-button" type="button" data-text-smaller aria-label="Make text smaller">A−</button>
+      <button class="control-button" type="button" data-text-larger aria-label="Make text larger">A+</button>
+    </div>
+  </nav>
+
+  <main class="lesson-shell">
+    <header class="lesson-hero">
+      <p class="eyebrow">Spaced review · {{REVIEW_DATE}}</p>
+      <h1>Bring the ideas back</h1>
+      <p class="outcome"><strong>Outcome:</strong> Recall and apply the central ideas from the lessons due today without rereading them first.</p>
+      <div class="lesson-meta">
+        <span class="meta-chip">5–10 minutes</span>
+        <span class="meta-chip">{{LESSON_COUNT}} lesson(s)</span>
+      </div>
+    </header>
+
+    <section class="section-card">
+      <h2>Before you begin</h2>
+      <p>Try each prompt from memory. Then reveal the model answer and compare the idea, not the exact wording. If the idea is unclear, reopen the original lesson after the attempt.</p>
+    </section>
+
+    <!-- Repeat this card once per lesson due today. -->
+    <section class="section-card" aria-labelledby="{{LESSON_ID}}-title">
+      <p class="eyebrow">{{LESSON_ID}} · {{INTERVAL}}</p>
+      <h2 id="{{LESSON_ID}}-title">{{LESSON_TITLE}}</h2>
+
+      <div class="question">
+        <label for="{{LESSON_ID}}-q1">{{RECALL_QUESTION}}</label>
+        <textarea class="recall-input" id="{{LESSON_ID}}-q1" data-recall-input></textarea>
+        <button class="answer-button" type="button" data-answer-button aria-expanded="false" aria-controls="{{LESSON_ID}}-a1">Show model answer</button>
+        <div class="model-answer" id="{{LESSON_ID}}-a1" hidden>{{MODEL_ANSWER}}</div>
+      </div>
+
+      <div class="question">
+        <label for="{{LESSON_ID}}-q2">{{APPLICATION_QUESTION}}</label>
+        <textarea class="recall-input" id="{{LESSON_ID}}-q2" data-recall-input></textarea>
+        <button class="answer-button" type="button" data-answer-button aria-expanded="false" aria-controls="{{LESSON_ID}}-a2">Show model answer</button>
+        <div class="model-answer" id="{{LESSON_ID}}-a2" hidden>{{APPLICATION_ANSWER}}</div>
+      </div>
+
+      <p><a href="../{{ORIGINAL_LESSON_FILE}}">Reopen the original lesson after attempting both questions</a></p>
+    </section>
+
+    <section class="section-card completion-panel">
+      <h2>Review finished?</h2>
+      <p>Record any idea that still feels unclear when reporting the result.</p>
+      <button class="action-button" type="button" data-complete-lesson>Mark review complete</button>
+      <p class="completion-status" data-completion-status aria-live="polite"></p>
+    </section>
+  </main>
+
+  <script src="../00_Templates/lesson.js"></script>
+</body>
+</html>
+

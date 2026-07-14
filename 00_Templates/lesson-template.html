@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{LESSON_DESCRIPTION}}">
+  <title>{{LESSON_ID}} · {{LESSON_TITLE}}</title>
+  <link rel="stylesheet" href="../00_Templates/lesson.css">
+</head>
+<body data-lesson-id="{{LESSON_ID}}">
+  <div class="reading-progress" role="progressbar" aria-label="Reading progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+    <span data-reading-progress></span>
+  </div>
+
+  <nav class="topbar" aria-label="Lesson navigation">
+    <a class="back-link" href="../index.html">← Learning home</a>
+    <div class="reading-controls" aria-label="Reading size">
+      <button class="control-button" type="button" data-text-smaller aria-label="Make text smaller">A−</button>
+      <button class="control-button" type="button" data-text-larger aria-label="Make text larger">A+</button>
+    </div>
+  </nav>
+
+  <main class="lesson-shell">
+    <header class="lesson-hero">
+      <p class="eyebrow">{{TOPIC}} · Lesson {{NUMBER}}</p>
+      <h1>{{LESSON_TITLE}}</h1>
+      <p class="outcome"><strong>Outcome:</strong> {{OUTCOME}}</p>
+      <div class="lesson-meta" aria-label="Lesson details">
+        <span class="meta-chip">10–15 minutes</span>
+        <span class="meta-chip">Level 1</span>
+        <span class="meta-chip">{{DATE}}</span>
+      </div>
+    </header>
+
+    <section class="section-card" aria-labelledby="problem-title">
+      <span class="section-number">1</span>
+      <h2 id="problem-title">The problem</h2>
+      <p>{{PROBLEM_FIRST_OPENING}}</p>
+    </section>
+
+    <section class="section-card" aria-labelledby="idea-title">
+      <span class="section-number">2</span>
+      <h2 id="idea-title">The core idea</h2>
+      <p>{{CORE_IDEA}}</p>
+      <div class="callout analogy"><strong>Analogy:</strong> {{ANALOGY}}</div>
+    </section>
+
+    <section class="section-card" aria-labelledby="example-title">
+      <span class="section-number">3</span>
+      <h2 id="example-title">Worked example</h2>
+      <p>{{WORKED_EXAMPLE}}</p>
+    </section>
+
+    <section class="section-card" aria-labelledby="practice-title">
+      <span class="section-number">4</span>
+      <h2 id="practice-title">Try it</h2>
+      <div class="practice-box">{{SMALL_ACTION}}</div>
+    </section>
+
+    <section class="section-card" aria-labelledby="questions-title">
+      <span class="section-number">5</span>
+      <h2 id="questions-title">Q&amp;A</h2>
+      <p>Try to answer before revealing the model answer. An incomplete attempt still counts as useful practice.</p>
+
+      <div class="question">
+        <label for="q1">{{QUESTION_1}}</label>
+        <textarea class="recall-input" id="q1" data-recall-input></textarea>
+        <button class="answer-button" type="button" data-answer-button aria-expanded="false" aria-controls="a1">Show model answer</button>
+        <div class="model-answer" id="a1" hidden>{{ANSWER_1}}</div>
+      </div>
+    </section>
+
+    <section class="section-card" aria-labelledby="reviews-title">
+      <h2 id="reviews-title">Review plan</h2>
+      <ul class="review-grid">
+        <li><label><input type="checkbox" id="review-1" data-review-check> +1 day <span class="review-date">{{REVIEW_1_DATE}}</span></label></li>
+        <li><label><input type="checkbox" id="review-3" data-review-check> +3 days <span class="review-date">{{REVIEW_3_DATE}}</span></label></li>
+        <li><label><input type="checkbox" id="review-7" data-review-check> +7 days <span class="review-date">{{REVIEW_7_DATE}}</span></label></li>
+        <li><label><input type="checkbox" id="review-21" data-review-check> +21 days <span class="review-date">{{REVIEW_21_DATE}}</span></label></li>
+      </ul>
+    </section>
+
+    <section class="section-card" aria-labelledby="sources-title">
+      <h2 id="sources-title">Sources</h2>
+      <ul class="source-list">{{SOURCE_LIST}}</ul>
+      <p class="fine-print">Sources checked {{CHECKED_DATE}}. Facts were paraphrased for teaching.</p>
+    </section>
+
+    <section class="section-card completion-panel">
+      <h2>Finished for today?</h2>
+      <p>You do not need to memorize everything now. The scheduled reviews will bring the idea back.</p>
+      <button class="action-button" type="button" data-complete-lesson>Mark lesson complete</button>
+      <p class="completion-status" data-completion-status aria-live="polite"></p>
+    </section>
+  </main>
+  <script src="../00_Templates/lesson.js"></script>
+</body>
+</html>
+

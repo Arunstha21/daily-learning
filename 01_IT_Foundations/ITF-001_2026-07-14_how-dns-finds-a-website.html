@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A short, interactive lesson explaining how DNS helps a browser find a website.">
+  <title>ITF-001 · How DNS finds a website</title>
+  <link rel="stylesheet" href="../00_Templates/lesson.css">
+</head>
+<body data-lesson-id="ITF-001">
+  <div class="reading-progress" role="progressbar" aria-label="Reading progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+    <span data-reading-progress></span>
+  </div>
+
+  <nav class="topbar" aria-label="Lesson navigation">
+    <a class="back-link" href="../index.html">← Learning home</a>
+    <div class="reading-controls" aria-label="Reading size">
+      <button class="control-button" type="button" data-text-smaller aria-label="Make text smaller">A−</button>
+      <button class="control-button" type="button" data-text-larger aria-label="Make text larger">A+</button>
+    </div>
+  </nav>
+
+  <main class="lesson-shell">
+    <header class="lesson-hero">
+      <p class="eyebrow">IT Foundations · Lesson 1</p>
+      <h1>How DNS helps your browser find a website</h1>
+      <p class="outcome"><strong>Outcome:</strong> In about 12 minutes, you will be able to explain what DNS does and what happens before a browser contacts a website.</p>
+      <div class="lesson-meta" aria-label="Lesson details">
+        <span class="meta-chip">About 12 minutes</span>
+        <span class="meta-chip">Level 1</span>
+        <span class="meta-chip">14 July 2026</span>
+      </div>
+    </header>
+
+    <section class="section-card" aria-labelledby="problem-title">
+      <span class="section-number">1</span>
+      <h2 id="problem-title">The problem: names are easier than numbers</h2>
+      <p>You type <code>example.com</code> into a browser. Your device cannot find a server from that name alone; network communication uses an Internet Protocol address, usually called an <strong>IP address</strong>.</p>
+      <p>Remembering a readable name is easier than remembering an address such as <code>93.184.216.34</code>. The Domain Name System, or <strong>DNS</strong>, connects these two forms.</p>
+      <div class="callout"><strong>The central idea:</strong> DNS finds information associated with a domain name, including the IP address a device can use to contact a server.</div>
+    </section>
+
+    <section class="section-card analogy" aria-labelledby="analogy-title">
+      <span class="section-number">2</span>
+      <h2 id="analogy-title">Use one picture: an address book</h2>
+      <p>Imagine saving a person as “Maya” in your contacts. You select the name; your phone uses the stored number.</p>
+      <p>DNS plays a similar role:</p>
+      <ul>
+        <li><strong>Domain name:</strong> the readable name, such as <code>example.com</code>.</li>
+        <li><strong>IP address:</strong> the network address used to reach a server.</li>
+        <li><strong>DNS lookup:</strong> the process of asking for the information connected to the domain.</li>
+      </ul>
+      <p>The analogy has a limit: DNS is not one global file on one computer. It is a distributed system made of many servers and delegated parts.</p>
+    </section>
+
+    <section class="section-card" aria-labelledby="flow-title">
+      <span class="section-number">3</span>
+      <h2 id="flow-title">What happens during a lookup</h2>
+      <p>Your device usually asks a <strong>recursive resolver</strong> to find the answer. The resolver may already have a valid cached answer. If not, it follows referrals through the DNS hierarchy until it reaches an authoritative source for the domain.</p>
+
+      <ol class="flow" aria-label="Simplified DNS lookup sequence">
+        <li><strong>1. Browser</strong>Needs the address for a domain</li>
+        <li><strong>2. Resolver</strong>Checks its cache first</li>
+        <li><strong>3. Root</strong>Points toward the top-level domain</li>
+        <li><strong>4. TLD</strong>Points toward the domain's nameserver</li>
+        <li><strong>5. Authority</strong>Returns the relevant DNS record</li>
+      </ol>
+
+      <div class="callout warning"><strong>Important:</strong> Most lookups do not need to contact every level every time. Caches can reuse unexpired information, making later lookups faster and reducing work.</div>
+
+      <h3 style="margin-top:26px">Three supporting ideas</h3>
+      <ol>
+        <li><strong>Distributed:</strong> DNS information is spread across many independently operated servers.</li>
+        <li><strong>Hierarchical:</strong> names are organized in levels, such as the root, <code>.com</code>, and <code>example.com</code>.</li>
+        <li><strong>Cached:</strong> resolvers can temporarily store answers according to their time-to-live value.</li>
+      </ol>
+    </section>
+
+    <section class="section-card" aria-labelledby="example-title">
+      <span class="section-number">4</span>
+      <h2 id="example-title">Worked example: opening example.com</h2>
+      <p><code>example.com</code> is reserved for documentation, so it is safe to use in examples.</p>
+      <ol>
+        <li>You enter <code>https://example.com</code>.</li>
+        <li>Your device asks its configured DNS resolver for the address connected to <code>example.com</code>.</li>
+        <li>The resolver returns a cached answer or obtains the answer through DNS nameservers.</li>
+        <li>Your browser uses the returned address to contact the server.</li>
+        <li>HTTPS then protects the web connection and the server returns webpage data.</li>
+      </ol>
+      <p>DNS participates in finding where to connect. It does not itself download, secure, or display the webpage.</p>
+    </section>
+
+    <section class="section-card" aria-labelledby="confusion-title">
+      <span class="section-number">5</span>
+      <h2 id="confusion-title">Do not mix up these jobs</h2>
+      <table class="comparison">
+        <thead>
+          <tr><th>Term</th><th>Main job</th><th>Address-book comparison</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Domain name</td><td>A human-readable name</td><td>The contact name</td></tr>
+          <tr><td>DNS</td><td>Finds records connected to the name</td><td>Looking up the contact</td></tr>
+          <tr><td>IP address</td><td>Identifies a network destination</td><td>The phone number</td></tr>
+          <tr><td>HTTPS</td><td>Protects communication with the website</td><td>A private, protected call</td></tr>
+          <tr><td>Web hosting</td><td>Runs or stores the website content</td><td>The person or organization you reach</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="section-card" aria-labelledby="practice-title">
+      <span class="section-number">6</span>
+      <h2 id="practice-title">Try it in under three minutes</h2>
+      <div class="practice-box">
+        <p><strong>Option A:</strong> Explain aloud: “DNS is useful because…” Keep the explanation under 30 seconds.</p>
+        <p><strong>Option B on a Mac:</strong> Open Terminal, enter <code>nslookup example.com</code>, and press Return. Look for an address in the result. The exact address may vary because services can use multiple addresses and delivery systems.</p>
+      </div>
+      <p class="fine-print">You do not need to memorize the lookup commands. The goal is to connect a readable name with a returned network address.</p>
+    </section>
+
+    <section class="section-card" aria-labelledby="recap-title">
+      <h2 id="recap-title">Three-line recap</h2>
+      <ol class="recap-list">
+        <li>DNS connects domain names with records that computers use, including IP addresses.</li>
+        <li>A resolver checks cached information and, when needed, follows the DNS hierarchy toward an authoritative answer.</li>
+        <li>DNS finds where to connect; HTTPS and the browser perform different jobs.</li>
+      </ol>
+    </section>
+
+    <section class="section-card" aria-labelledby="communication-title">
+      <h2 id="communication-title">Communication practice</h2>
+      <p>Complete this sentence in plain language:</p>
+      <div class="practice-box"><strong>“DNS is like an address book because…”</strong></div>
+      <p>A good explanation mentions a readable name and the address used to reach a server. It does not need to mention every type of nameserver.</p>
+    </section>
+
+    <section class="section-card" aria-labelledby="reviews-title">
+      <h2 id="reviews-title">Your review plan</h2>
+      <p>These dates bring the central idea back with a different question. Check a box only after completing that review.</p>
+      <ul class="review-grid">
+        <li><label><input type="checkbox" id="review-1" data-review-check> +1 day <span class="review-date">15 July 2026</span></label></li>
+        <li><label><input type="checkbox" id="review-3" data-review-check> +3 days <span class="review-date">17 July 2026</span></label></li>
+        <li><label><input type="checkbox" id="review-7" data-review-check> +7 days <span class="review-date">21 July 2026</span></label></li>
+        <li><label><input type="checkbox" id="review-21" data-review-check> +21 days <span class="review-date">4 August 2026</span></label></li>
+      </ul>
+    </section>
+
+    <section class="section-card" aria-labelledby="sources-title">
+      <h2 id="sources-title">Sources and fact check</h2>
+      <ul class="source-list">
+        <li><a href="https://www.icann.org/resources/pages/dns-2022-09-13-en">ICANN: The Domain Name System</a>. Official overview of domain names, IP addresses, and DNS.</li>
+        <li><a href="https://developers.cloudflare.com/learning-paths/cybersafe/concepts/what-is-dns/">Cloudflare Learning Paths: What is DNS?</a>. Lookup sequence, resolvers, caching, and authoritative nameservers; page updated 23 April 2026.</li>
+        <li><a href="https://www.rfc-editor.org/rfc/rfc1034.html">RFC 1034: Domain Names, Concepts and Facilities</a>. Foundational Internet standard describing the distributed, hierarchical DNS design; published November 1987.</li>
+        <li><a href="https://www.rfc-editor.org/rfc/rfc2606.html">RFC 2606: Reserved Top Level DNS Names</a>. Confirms that <code>example.com</code> is reserved for documentation; published June 1999.</li>
+      </ul>
+      <p class="fine-print">Sources checked 14 July 2026. Older RFCs are used because they define stable protocol foundations; the current explanatory documentation was checked for modern terminology and behavior.</p>
+    </section>
+
+    <section class="section-card" aria-labelledby="questions-title">
+      <span class="section-number">7</span>
+      <h2 id="questions-title">Q&amp;A: answer before you reveal</h2>
+      <p>Write whatever you remember. The attempt matters more than perfect wording, and your text stays saved in this browser.</p>
+
+      <div class="question">
+        <label for="q1">1. What problem does DNS solve?</label>
+        <textarea class="recall-input" id="q1" data-recall-input placeholder="Write one or two sentences."></textarea>
+        <button class="answer-button" type="button" data-answer-button aria-expanded="false" aria-controls="a1">Show model answer</button>
+        <div class="model-answer" id="a1" hidden>DNS lets people use readable domain names while computers obtain records needed for network communication, including IP addresses.</div>
+      </div>
+
+      <div class="question">
+        <label for="q2">2. What is the difference between a domain name and an IP address?</label>
+        <textarea class="recall-input" id="q2" data-recall-input placeholder="Use the address-book analogy if it helps."></textarea>
+        <button class="answer-button" type="button" data-answer-button aria-expanded="false" aria-controls="a2">Show model answer</button>
+        <div class="model-answer" id="a2" hidden>A domain name is a readable name such as example.com. An IP address identifies a network destination that a device can contact.</div>
+      </div>
+
+      <div class="question">
+        <label for="q3">3. Why might a resolver not contact root and authoritative servers during every lookup?</label>
+        <textarea class="recall-input" id="q3" data-recall-input placeholder="Think about repeated lookups."></textarea>
+        <button class="answer-button" type="button" data-answer-button aria-expanded="false" aria-controls="a3">Show model answer</button>
+        <div class="model-answer" id="a3" hidden>The resolver may already have valid, unexpired information in its cache, so it can reuse that information without repeating the full lookup.</div>
+      </div>
+
+      <div class="question">
+        <label for="q4">4. Does DNS secure and display the webpage? Explain briefly.</label>
+        <textarea class="recall-input" id="q4" data-recall-input placeholder="Separate the jobs of DNS, HTTPS, and the browser."></textarea>
+        <button class="answer-button" type="button" data-answer-button aria-expanded="false" aria-controls="a4">Show model answer</button>
+        <div class="model-answer" id="a4" hidden>No. DNS helps find where to connect. HTTPS protects the web connection, while the browser requests and displays the webpage.</div>
+      </div>
+
+      <div class="completion-panel" style="margin-top:32px">
+        <h3>Finished for today?</h3>
+        <p>You only need the central idea today. The review schedule will bring the details back.</p>
+        <button class="action-button" type="button" data-complete-lesson>Mark lesson complete</button>
+        <p class="completion-status" data-completion-status aria-live="polite"></p>
+      </div>
+    </section>
+  </main>
+
+  <script src="../00_Templates/lesson.js"></script>
+</body>
+</html>
+

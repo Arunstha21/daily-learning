@@ -1,0 +1,48 @@
+# Learning memory and review ledger
+
+This file records durable progress. Update it after every lesson and review. Do not mark work completed without evidence from the learner or a saved result.
+
+## Program facts
+
+- Started: 2026-07-14
+- Timezone: Asia/Kathmandu
+- Default daily study target: 10 to 15 minutes
+- Current difficulty: Level 1
+- Review intervals: +1, +3, +7, and +21 days
+- Topic rotation: ITF → PC → AI → BE → SCT → SHA → PP → repeat
+
+## Lesson registry
+
+| ID | Date | Topic | Title | File | Status |
+| --- | --- | --- | --- | --- | --- |
+| ITF-001 | 2026-07-14 | IT Foundations | How DNS helps your browser find a website | `01_IT_Foundations/ITF-001_2026-07-14_how-dns-finds-a-website.html` | Created; completion unconfirmed |
+
+## Review queue
+
+| Lesson | Interval | Due date | Status | Prepared file | Score or note |
+| --- | --- | --- | --- | --- | --- |
+| ITF-001 | +1 day | 2026-07-15 | Pending | — | — |
+| ITF-001 | +3 days | 2026-07-17 | Pending | — | — |
+| ITF-001 | +7 days | 2026-07-21 | Pending | — | — |
+| ITF-001 | +21 days | 2026-08-04 | Pending | — | — |
+
+## Review history
+
+No reviews have been confirmed yet.
+
+## Learner feedback
+
+No lesson feedback has been recorded yet.
+
+When feedback is provided, record only useful learning signals: difficulty, attention, confusing terms, incorrect ideas, successful explanations, practical interests, and preferred examples. Avoid storing unnecessary personal or sensitive details.
+
+## Daily run log
+
+### 2026-07-14
+
+- Created the workspace instructions, teaching guide, current context, memory ledger, templates, dashboard, and first lesson.
+- Initial lesson: `ITF-001` on DNS.
+- Scheduled reviews for 2026-07-15, 2026-07-17, 2026-07-21, and 2026-08-04.
+- Activated the `daily-learning-lesson` automation for 07:00 Asia/Kathmandu each day.
+- Next rotation step: Productivity and Communication.
+
