@@ -16,11 +16,20 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v6
 
+      - name: Check Cloudflare authentication
+        run: npx --yes wrangler@4.110.0 whoami
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+
+      - name: Check Pages projects
+        run: npx --yes wrangler@4.110.0 pages project list
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+
       - name: Deploy to Cloudflare Pages
-        uses: cloudflare/wrangler-action@v3
-        with:
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          wranglerVersion: "4.110.0"
-          command: pages deploy . --project-name=daily-learning
-          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+        run: npx --yes wrangler@4.110.0 pages deploy . --project-name=daily-learning
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
