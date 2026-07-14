@@ -28,5 +28,5 @@ jobs:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           wranglerVersion: "4.110.0"
-          command: deploy --assets=.
+          command: deploy --assets=. --name daily-learning
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
