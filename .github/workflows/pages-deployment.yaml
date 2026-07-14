@@ -12,16 +12,15 @@ jobs:
       contents: read
       deployments: write
 
-    name: Deploy to Cloudflare Pages
-
     steps:
       - name: Checkout
         uses: actions/checkout@v6
 
-      - name: Deploy
+      - name: Deploy to Cloudflare Pages
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          wranglerVersion: "4.110.0"
           command: pages deploy . --project-name=daily-learning
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
