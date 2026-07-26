@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="2026-07-26 spaced-review session covering overdue ITF-001 intervals.">
+  <title>Review · 26 July 2026</title>
+  <link rel="stylesheet" href="../00_Templates/lesson.css">
+</head>
+<body data-lesson-id="REVIEW-2026-07-26">
+  <div class="reading-progress" role="progressbar" aria-label="Review progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+    <span data-reading-progress></span>
+  </div>
+
+  <nav class="topbar" aria-label="Review navigation">
+    <a class="back-link" href="../index.html">← Learning home</a>
+    <div class="reading-controls" aria-label="Reading size">
+      <button class="control-button" type="button" data-text-smaller aria-label="Make text smaller">A−</button>
+      <button class="control-button" type="button" data-text-larger aria-label="Make text larger">A+</button>
+    </div>
+  </nav>
+
+  <main class="lesson-shell">
+    <header class="lesson-hero">
+      <p class="eyebrow">Spaced review · 26 July 2026</p>
+      <h1>Bring the ideas back</h1>
+      <p class="outcome"><strong>Outcome:</strong> Recall and apply the central ideas from the lessons due today without rereading them first.</p>
+      <div class="lesson-meta">
+        <span class="meta-chip">5–10 minutes</span>
+        <span class="meta-chip">1 lesson</span>
+      </div>
+    </header>
+
+    <section class="section-card">
+      <h2>Before you begin</h2>
+      <p>Try each prompt from memory. Then reveal the model answer and compare the idea, not the exact wording. If the idea is unclear, reopen the original lesson after the attempt.</p>
+      <p>Today’s review covers ITF-001. The +1, +3, and +7 day intervals are overdue; the questions therefore mix simple recall, a new application, and a comparison.</p>
+    </section>
+
+    <section class="section-card" aria-labelledby="ITF-001-title">
+      <p class="eyebrow">ITF-001 · +1 / +3 / +7 days (overdue)</p>
+      <h2 id="ITF-001-title">How DNS helps your browser find a website</h2>
+
+      <div class="question">
+        <label for="ITF-001-q1">1. In one or two sentences, what problem does DNS solve?</label>
+        <textarea class="recall-input" id="ITF-001-q1" data-recall-input placeholder="Write from memory."></textarea>
+        <button class="answer-button" type="button" data-answer-button aria-expanded="false" aria-controls="ITF-001-a1">Show model answer</button>
+        <div class="model-answer" id="ITF-001-a1" hidden>DNS lets people use readable domain names while computers obtain the network records they need, including IP addresses, so a device can contact the right server.</div>
+      </div>
+
+      <div class="question">
+        <label for="ITF-001-q2">2. A friend says: “I typed the website name and the page appeared, so DNS must have downloaded the page.” What is wrong with that statement, and what jobs belong to other parts of the process?</label>
+        <textarea class="recall-input" id="ITF-001-q2" data-recall-input placeholder="Separate the jobs."></textarea>
+        <button class="answer-button" type="button" data-answer-button aria-expanded="false" aria-controls="ITF-001-a2">Show model answer</button>
+        <div class="model-answer" id="ITF-001-a2" hidden>DNS only helps find where to connect (the address linked to the name). HTTPS protects the connection, and the browser requests and displays the webpage. DNS does not download or show the page.</div>
+      </div>
+
+      <div class="question">
+        <label for="ITF-001-q3">3. Why might a DNS resolver skip contacting the root and authoritative servers on a later lookup of the same name?</label>
+        <textarea class="recall-input" id="ITF-001-q3" data-recall-input placeholder="Think about repeated lookups."></textarea>
+        <button class="answer-button" type="button" data-answer-button aria-expanded="false" aria-controls="ITF-001-a3">Show model answer</button>
+        <div class="model-answer" id="ITF-001-a3" hidden>The resolver may already hold a valid, unexpired answer in its cache, so it can reuse that information without repeating the full hierarchical lookup.</div>
+      </div>
+
+      <p><a href="../01_IT_Foundations/ITF-001_2026-07-14_how-dns-finds-a-website.html">Reopen the original lesson after attempting the questions</a></p>
+    </section>
+
+    <section class="section-card completion-panel">
+      <h2>Review finished?</h2>
+      <p>Record any idea that still feels unclear when reporting the result. Do not mark the review complete in the ledger until you have finished the attempt.</p>
+      <button class="action-button" type="button" data-complete-lesson>Mark review complete</button>
+      <p class="completion-status" data-completion-status aria-live="polite"></p>
+    </section>
+  </main>
+
+  <script src="../00_Templates/lesson.js"></script>
+</body>
+</html>

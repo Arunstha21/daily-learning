@@ -16,15 +16,20 @@ This file records durable progress. Update it after every lesson and review. Do 
 | ID | Date | Topic | Title | File | Status |
 | --- | --- | --- | --- | --- | --- |
 | ITF-001 | 2026-07-14 | IT Foundations | How DNS helps your browser find a website | `01_IT_Foundations/ITF-001_2026-07-14_how-dns-finds-a-website.html` | Created; completion unconfirmed |
+| PC-001 | 2026-07-26 | Productivity and Communication | How to explain an idea clearly using Context, Point, and Example | `02_Productivity_and_Communication/PC-001_2026-07-26_explain-idea-context-point-example.html` | Created; completion unconfirmed |
 
 ## Review queue
 
 | Lesson | Interval | Due date | Status | Prepared file | Score or note |
 | --- | --- | --- | --- | --- | --- |
-| ITF-001 | +1 day | 2026-07-15 | Pending | — | — |
-| ITF-001 | +3 days | 2026-07-17 | Pending | — | — |
-| ITF-001 | +7 days | 2026-07-21 | Pending | — | — |
+| ITF-001 | +1 day | 2026-07-15 | Pending (overdue) | `08_Reviews/REVIEW_2026-07-26.html` | Combined overdue review prepared 2026-07-26 |
+| ITF-001 | +3 days | 2026-07-17 | Pending (overdue) | `08_Reviews/REVIEW_2026-07-26.html` | Combined overdue review prepared 2026-07-26 |
+| ITF-001 | +7 days | 2026-07-21 | Pending (overdue) | `08_Reviews/REVIEW_2026-07-26.html` | Combined overdue review prepared 2026-07-26 |
 | ITF-001 | +21 days | 2026-08-04 | Pending | — | — |
+| PC-001 | +1 day | 2026-07-27 | Pending | — | — |
+| PC-001 | +3 days | 2026-07-29 | Pending | — | — |
+| PC-001 | +7 days | 2026-08-02 | Pending | — | — |
+| PC-001 | +21 days | 2026-08-16 | Pending | — | — |
 
 ## Review history
 
@@ -46,3 +51,13 @@ When feedback is provided, record only useful learning signals: difficulty, atte
 - Activated the `daily-learning-lesson` automation for 07:00 Asia/Kathmandu each day.
 - Next rotation step: Productivity and Communication.
 
+### 2026-07-26
+
+- Read AGENTS.md, GUIDE.md, CONTEXT.md, MEMORY.md, and ITF-001.
+- Determined overdue reviews for ITF-001 (+1, +3, +7).
+- Research for PC-001 used primary/authoritative sources on clear explanation structure (PLOS Computational Biology C-C-C scheme, British Council guidance on examples and simple language, widely used PREP and BLUF patterns).
+- Created Level-1 lesson `PC-001` (Context → Point → Example) in `02_Productivity_and_Communication/`.
+- Created combined review file `08_Reviews/REVIEW_2026-07-26.html` covering overdue ITF-001 intervals.
+- Updated `index.html`, `CONTEXT.md`, and `MEMORY.md`.
+- Next rotation step: AI, Data, and Modern Tech.
+- No lesson or review marked completed (awaiting learner confirmation).

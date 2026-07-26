@@ -1,6 +1,6 @@
 # Current learning context
 
-Last updated: 2026-07-14, Asia/Kathmandu
+Last updated: 2026-07-26, Asia/Kathmandu
 
 ## Learner profile
 
@@ -13,14 +13,22 @@ The learner has also reported feeling that memory and thinking capacity have dec
 - Program start: 2026-07-14
 - Current difficulty: Level 1
 - Daily lesson target: 10 to 15 minutes
-- Lessons created: 1
-- Reviews completed: 0
-- Current rotation position: 2 of 7
-- Next topic: Productivity and Communication
-- Next proposed lesson: `PC-001` — How to explain an idea clearly using Context, Point, and Example
+- Lessons created: 2
+- Reviews completed: 0 (learner confirmation required)
+- Current rotation position: 3 of 7
+- Next topic: AI, Data, and Modern Tech
+- Next proposed lesson: `AI-001` — A practical introduction to what “AI” usually means in everyday tools (to be refined on the day)
 - Daily automation time: 07:00 Asia/Kathmandu
 
 ## Active lesson
+
+- ID: `PC-001`
+- Title: How to explain an idea clearly using Context, Point, and Example
+- Date: 2026-07-26
+- File: `02_Productivity_and_Communication/PC-001_2026-07-26_explain-idea-context-point-example.html`
+- Status: Created; learner completion not yet confirmed
+
+## Previous active lesson (still pending confirmation)
 
 - ID: `ITF-001`
 - Title: How DNS helps your browser find a website
@@ -30,10 +38,12 @@ The learner has also reported feeling that memory and thinking capacity have dec
 
 ## Next reviews
 
-- 2026-07-15: `ITF-001` +1 day
-- 2026-07-17: `ITF-001` +3 days
-- 2026-07-21: `ITF-001` +7 days
+- 2026-07-26: `ITF-001` overdue (+1 / +3 / +7) — review file prepared: `08_Reviews/REVIEW_2026-07-26.html`
+- 2026-07-27: `PC-001` +1 day
+- 2026-07-29: `PC-001` +3 days
+- 2026-08-02: `PC-001` +7 days
 - 2026-08-04: `ITF-001` +21 days
+- 2026-08-16: `PC-001` +21 days
 
 ## Adjustment rules
 
@@ -42,4 +52,3 @@ The learner has also reported feeling that memory and thinking capacity have dec
 - If the learner scores below 60% twice on the same topic, create a simpler explanation with a different example.
 - If the learner consistently scores 80% or higher and reports the lessons are easy, consider Level 2.
 - Never backfill missed lessons in bulk.
-
