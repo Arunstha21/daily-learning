@@ -74,12 +74,14 @@ Use recent sources for changing topics. Older sources are acceptable for stable 
 
 ## Tech-news standard
 
+- All tech-news briefs are **HTML only** (no Markdown).
 - Keep briefs short (4–8 bullets).
 - Prefer primary sources and established tech outlets.
 - Morning brief covers the previous ~12–24 h (overnight priority).
 - Evening brief covers same-day later developments and must not repeat the morning items.
 - Always state the approximate time window and the date checked.
-- Store files in `tech-news/YYYY-MM-DD-AM.md` and `tech-news/YYYY-MM-DD-PM.md`.
+- Store files as `tech-news/YYYY-MM-DD-AM.html` and `tech-news/YYYY-MM-DD-PM.html`.
+- Match the calm visual language of the rest of the site (system fonts, strong contrast, mobile-first, keyboard accessible, no external scripts).
 
 ## HTML design standard
 
@@ -107,7 +109,7 @@ Use an adult, calm visual style. The interface should feel clear rather than chi
 | `06_Society_History_and_Current_Affairs` | `SHA` | Institutions, history, geography, and carefully sourced current affairs |
 | `07_Practical_Projects` | `PP` | Weekly synthesis and small useful projects |
 | `08_Reviews` | `REVIEW` | Date-based spaced-review sessions |
-| `tech-news` | — | Twice-daily short tech briefs (AM / PM Markdown) |
+| `tech-news` | — | Twice-daily short tech briefs (AM / PM **HTML**) |
 
 ## Completion checklist
 
@@ -123,4 +125,4 @@ Before saving a lesson, confirm:
 - Navigation and controls work by keyboard.
 - The page works at 375px wide.
 - `index.html`, `CONTEXT.md`, and `MEMORY.md` are updated.
-- For the day: AM and/or PM tech-news brief(s) exist and are linked if this was a full run.
+- For the day: AM and/or PM tech-news HTML brief(s) exist and are linked from `index.html` if this was a full run.

@@ -35,7 +35,7 @@ Also check the day's run-log entries in `CONTEXT.md` / `MEMORY.md` to determine 
 2. Check `MEMORY.md` / `CONTEXT.md` for reviews due today or overdue.
 3. Research and create **exactly one new lesson** HTML file in the correct topic folder (follow the adaptive-difficulty / Level rules in `GUIDE.md` and current state in `CONTEXT.md`).
 4. If any reviews are due or overdue, create (or update) one dated review HTML file in `08_Reviews/` covering them.
-5. Research and post the **morning tech-news brief** (last ~12–24 h, prioritize overnight developments). Save as `tech-news/YYYY-MM-DD-AM.md` and link from `index.html` / `CONTEXT.md`.
+5. Research and post the **morning tech-news brief** (last ~12–24 h, prioritize overnight developments). Save as `tech-news/YYYY-MM-DD-AM.html` and link from `index.html` / `CONTEXT.md`.
 6. Update `index.html`, `CONTEXT.md`, and `MEMORY.md`, tagging the run-log entry **AM**.
 7. Verify links, lesson numbering, source URLs, review dates, keyboard interaction, and mobile layout.
 8. Leave a concise completion note naming the new lesson, any review file, and the AM tech brief.
@@ -47,7 +47,7 @@ Also check the day's run-log entries in `CONTEXT.md` / `MEMORY.md` to determine 
    - Append a short recap / quiz (2–4 quick questions with revealable answers) to that lesson's HTML, or fill the existing "quick recap" / Q&A slot if the template already provides one.
    - This is not a whole new file.
 3. If any new reviews became due since morning (rare, but possible with +1-day items), fold them into the review file; otherwise skip review creation.
-4. Research and post the **evening tech-news brief** (later-breaking items from the day, distinct from the morning ones — check for overlap before adding). Save as `tech-news/YYYY-MM-DD-PM.md`.
+4. Research and post the **evening tech-news brief** (later-breaking items from the day, distinct from the morning ones — check for overlap before adding). Save as `tech-news/YYYY-MM-DD-PM.html`.
 5. Update `index.html`, `CONTEXT.md`, and `MEMORY.md`, tagging the run-log entry **PM**.
 
 ### Guardrails for the split
@@ -103,9 +103,11 @@ Do not overload the page with decorative motion, long paragraphs, or unnecessary
 ## Tech-news rules
 
 - Create a `tech-news/` folder if it does not exist.
-- Morning brief: last ~12–24 h, prioritize overnight / Asia-time developments. File: `tech-news/YYYY-MM-DD-AM.md`.
-- Evening brief: later-breaking items from the same calendar day, explicitly non-overlapping with the morning brief. File: `tech-news/YYYY-MM-DD-PM.md`.
+- All tech-news briefs are **HTML only** (same calm visual language as lessons and the home page).
+- Morning brief: last ~12–24 h, prioritize overnight / Asia-time developments. File: `tech-news/YYYY-MM-DD-AM.html`.
+- Evening brief: later-breaking items from the same calendar day, explicitly non-overlapping with the morning brief. File: `tech-news/YYYY-MM-DD-PM.html`.
 - Keep each brief short (4–8 bullets). Prefer primary sources, official blogs, and established tech reporting. State the approximate window covered and the date checked.
+- Every brief page must be keyboard-accessible, mobile-friendly, and free of external scripts, analytics, or third-party fonts.
 - Link the latest AM/PM briefs from `index.html` and note them in the `CONTEXT.md` run log.
 
 ## File and naming rules
@@ -113,7 +115,7 @@ Do not overload the page with decorative motion, long paragraphs, or unnecessary
 - Lesson IDs are permanent: `ITF-001`, `PC-001`, `AI-001`, `BE-001`, `SCT-001`, `SHA-001`, or `PP-001`.
 - Lesson filenames use `ID_YYYY-MM-DD_short-title.html`.
 - Review filenames use `REVIEW_YYYY-MM-DD.html`.
-- Tech-news filenames use `YYYY-MM-DD-AM.md` or `YYYY-MM-DD-PM.md` inside `tech-news/`.
+- Tech-news filenames use `YYYY-MM-DD-AM.html` or `YYYY-MM-DD-PM.html` inside `tech-news/`.
 - Never rename or overwrite a completed lesson. Create the next numbered file.
 - Keep each lesson's facts and questions inside its HTML file.
 - Treat `MEMORY.md` as the chronological learning ledger.

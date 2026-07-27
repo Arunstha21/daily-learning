@@ -56,9 +56,11 @@ See `AGENTS.md` for full guardrails, catch-up rules, and the rule-of-thumb for w
 
 ## Tech-news tracking
 
-- Folder: `tech-news/` (to be created on first brief)
-- 2026-07-27 AM: pending (instructions just updated)
+- Folder: `tech-news/` (HTML only)
+- Naming: `YYYY-MM-DD-AM.html` / `YYYY-MM-DD-PM.html`
+- 2026-07-27 AM: pending
 - 2026-07-27 PM: pending
+- `index.html` now has a dedicated Tech News card ready for the first links.
 
 ## Adjustment rules
 
@@ -77,3 +79,9 @@ See `AGENTS.md` for full guardrails, catch-up rules, and the rule-of-thumb for w
 - Lightly updated `GUIDE.md` (twice-daily rhythm, tech-news standard, folder map).
 - Refreshed this `CONTEXT.md` for the new schedule.
 - No new lesson or tech brief created in this commit; the next AM run should produce `AI-001` + morning tech brief + any due reviews.
+
+### 2026-07-27 (Tech-news format)
+
+- Learner requested tech-news be **HTML only** (not Markdown) and that `index.html` surface the briefs.
+- Updated `AGENTS.md`, `GUIDE.md`, `CONTEXT.md`, and `index.html` accordingly.
+- Tech-news files will use `tech-news/YYYY-MM-DD-AM.html` and `…-PM.html`.

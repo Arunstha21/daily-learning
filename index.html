@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="A personal daily learning program with short lessons and spaced reviews.">
+  <meta name="description" content="A personal daily learning program with short lessons, spaced reviews, and twice-daily tech briefs.">
   <title>Daily Learning</title>
   <style>
     :root { color-scheme: light; --blue:#1d4ed8; --ink:#172033; --muted:#526079; --line:#d7dfeb; --orange:#c2410c; font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
@@ -27,6 +27,11 @@
     .rotation { padding-left:22px; }
     .rotation li + li { margin-top:7px; }
     .review { padding:14px 16px; border-left:5px solid #ca8a04; background:#fef9c3; border-radius:0 12px 12px 0; }
+    .news-list { list-style:none; padding:0; margin:0; }
+    .news-list li { margin:0 0 10px; }
+    .news-list a { display:block; padding:12px 14px; border:1px solid #bfdbfe; border-radius:10px; background:#f8fbff; font-weight:700; text-decoration:none; }
+    .news-list a:hover { background:#eff6ff; }
+    .news-empty { color:var(--muted); font-size:.95rem; }
     @media (max-width:720px) { .grid { grid-template-columns:1fr; } main { width:min(100% - 20px,1040px); } .hero { border-radius:16px; } }
     @media (prefers-reduced-motion:reduce) { *,*::before,*::after { scroll-behavior:auto!important; transition:none!important; } }
   </style>
@@ -36,7 +41,7 @@
     <header class="hero">
       <p class="eyebrow">Personal learning workspace</p>
       <h1>Learn one useful thing today.</h1>
-      <p class="lead">Short, sourced lessons designed for limited focus. Each lesson includes a practical example, Q&amp;A, and reviews after 1, 3, 7, and 21 days.</p>
+      <p class="lead">Short, sourced lessons designed for limited focus. Each lesson includes a practical example, Q&amp;A, and reviews after 1, 3, 7, and 21 days. Twice-daily tech briefs keep you current without overload.</p>
       <a class="next" href="02_Productivity_and_Communication/PC-001_2026-07-26_explain-idea-context-point-example.html">Open today’s lesson</a>
     </header>
 
@@ -56,6 +61,17 @@
       </section>
 
       <section class="card">
+        <h2>Tech news</h2>
+        <p class="news-empty">No briefs yet. The first morning brief will appear here after the next AM run.</p>
+        <!-- Example structure once briefs exist:
+        <ul class="news-list">
+          <li><a href="tech-news/2026-07-27-AM.html">27 July 2026 · Morning brief</a></li>
+          <li><a href="tech-news/2026-07-27-PM.html">27 July 2026 · Evening brief</a></li>
+        </ul>
+        -->
+      </section>
+
+      <section class="card">
         <h2>Topic rotation</h2>
         <ol class="rotation">
           <li>IT Foundations</li>
@@ -71,7 +87,7 @@
       <section class="card">
         <h2>How progress is saved</h2>
         <p>Your written attempts, revealed answers, text size, and completion check are saved in this browser. The files do not use accounts, tracking, analytics, or external scripts.</p>
-        <p class="details">The Markdown files in this folder hold the curriculum state and scheduled review ledger.</p>
+        <p class="details">The Markdown files in this folder hold the curriculum state and scheduled review ledger. Tech briefs are HTML pages in <code>tech-news/</code>.</p>
       </section>
     </div>
   </main>
