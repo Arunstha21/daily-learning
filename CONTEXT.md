@@ -1,12 +1,21 @@
 # Current learning context
 
-Last updated: 2026-07-26, Asia/Kathmandu
+Last updated: 2026-07-27, Asia/Kathmandu
 
 ## Learner profile
 
 The learner is starting from a low-study baseline and reports difficulty with focus and memorization. The program should build consistency before volume. Lessons should use plain language, practical relevance, short recall, and repeated review. Main goals are broader knowledge, productivity, communication, and IT capability.
 
 The learner has also reported feeling that memory and thinking capacity have declined over several years. This workspace cannot assess the cause. Do not make medical claims. Encourage professional evaluation if the concern is worsening or interfering with daily life.
+
+## Schedule change (2026-07-27)
+
+The program moved from a single daily run to a **Twice-Daily Schedule**:
+
+- **Morning Run**: new lesson + due reviews + morning tech-news brief.
+- **Evening Run**: light reinforcement on the morning lesson + evening tech-news brief (no second full lesson).
+
+See `AGENTS.md` for full guardrails, catch-up rules, and the rule-of-thumb for which file to update.
 
 ## Current state
 
@@ -18,7 +27,7 @@ The learner has also reported feeling that memory and thinking capacity have dec
 - Current rotation position: 3 of 7
 - Next topic: AI, Data, and Modern Tech
 - Next proposed lesson: `AI-001` — A practical introduction to what “AI” usually means in everyday tools (to be refined on the day)
-- Daily automation time: 07:00 Asia/Kathmandu
+- Automation note: previously set for 07:00 Asia/Kathmandu; now expects AM + PM runs.
 
 ## Active lesson
 
@@ -45,6 +54,12 @@ The learner has also reported feeling that memory and thinking capacity have dec
 - 2026-08-04: `ITF-001` +21 days
 - 2026-08-16: `PC-001` +21 days
 
+## Tech-news tracking
+
+- Folder: `tech-news/` (to be created on first brief)
+- 2026-07-27 AM: pending (instructions just updated)
+- 2026-07-27 PM: pending
+
 ## Adjustment rules
 
 - If the learner reports overload, reduce lesson length to 7 to 10 minutes.
@@ -52,3 +67,13 @@ The learner has also reported feeling that memory and thinking capacity have dec
 - If the learner scores below 60% twice on the same topic, create a simpler explanation with a different example.
 - If the learner consistently scores 80% or higher and reports the lessons are easy, consider Level 2.
 - Never backfill missed lessons in bulk.
+
+## Run log
+
+### 2026-07-27 (Instructions update)
+
+- Learner confirmed the Twice-Daily Schedule and asked for the instructions to be pushed to the repo.
+- Updated `AGENTS.md` (Morning / Evening runs, tech-news, guardrails, catch-up, file-update rule of thumb).
+- Lightly updated `GUIDE.md` (twice-daily rhythm, tech-news standard, folder map).
+- Refreshed this `CONTEXT.md` for the new schedule.
+- No new lesson or tech brief created in this commit; the next AM run should produce `AI-001` + morning tech brief + any due reviews.

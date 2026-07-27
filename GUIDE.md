@@ -6,6 +6,12 @@ The learner should be able to open one file, understand what matters, try the id
 
 The lesson should not depend on motivation or long concentration. Break information into small sections with explicit stopping points. Use plain English first; introduce the technical term after the idea is understandable.
 
+## Twice-daily rhythm
+
+- **Morning**: full new lesson + any due reviews + morning tech-news brief.
+- **Evening**: light reinforcement (2–4 extra recall questions or a short recap appended to the morning lesson) + evening tech-news brief (non-overlapping).
+- Never create a second full lesson on the same calendar day unless the morning run was completely missed (then the PM run becomes a flagged catch-up).
+
 ## Standard lesson sequence
 
 1. **Outcome:** One sentence describing what the learner will be able to explain or do.
@@ -20,6 +26,8 @@ The lesson should not depend on motivation or long concentration. Break informat
 10. **Q&A:** Three to five questions answered only after the learner attempts them.
 11. **Review plan:** Display the +1, +3, +7, and +21 dates.
 12. **Sources:** Direct, authoritative links and the date checked.
+
+Evening reinforcement may add 2–4 additional short questions to the existing Q&A / recap area of that day's lesson rather than creating a new file.
 
 ## Memory-support method
 
@@ -64,6 +72,15 @@ Use this source order:
 
 Use recent sources for changing topics. Older sources are acceptable for stable foundations, such as protocol specifications, but explain why they remain relevant. Label employer surveys, projections, and models as such; do not present them as guaranteed outcomes.
 
+## Tech-news standard
+
+- Keep briefs short (4–8 bullets).
+- Prefer primary sources and established tech outlets.
+- Morning brief covers the previous ~12–24 h (overnight priority).
+- Evening brief covers same-day later developments and must not repeat the morning items.
+- Always state the approximate time window and the date checked.
+- Store files in `tech-news/YYYY-MM-DD-AM.md` and `tech-news/YYYY-MM-DD-PM.md`.
+
 ## HTML design standard
 
 Use an adult, calm visual style. The interface should feel clear rather than childish.
@@ -90,6 +107,7 @@ Use an adult, calm visual style. The interface should feel clear rather than chi
 | `06_Society_History_and_Current_Affairs` | `SHA` | Institutions, history, geography, and carefully sourced current affairs |
 | `07_Practical_Projects` | `PP` | Weekly synthesis and small useful projects |
 | `08_Reviews` | `REVIEW` | Date-based spaced-review sessions |
+| `tech-news` | — | Twice-daily short tech briefs (AM / PM Markdown) |
 
 ## Completion checklist
 
@@ -105,4 +123,4 @@ Before saving a lesson, confirm:
 - Navigation and controls work by keyboard.
 - The page works at 375px wide.
 - `index.html`, `CONTEXT.md`, and `MEMORY.md` are updated.
-
+- For the day: AM and/or PM tech-news brief(s) exist and are linked if this was a full run.
