@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A personal daily learning program with short lessons, spaced reviews, and twice-daily tech briefs.">
+  <title>Daily Learning</title>
+  <style>
+    :root { color-scheme: light; --blue:#1d4ed8; --ink:#172033; --muted:#526079; --line:#d7dfeb; --orange:#c2410c; font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+    * { box-sizing:border-box; }
+    body { margin:0; color:var(--ink); background:#f6f8fc; font-size:17px; line-height:1.6; }
+    a { color:var(--blue); text-underline-offset:3px; }
+    a:focus-visible { outline:3px solid #f97316; outline-offset:3px; }
+    main { width:min(100% - 32px, 1040px); margin:32px auto 80px; }
+    .hero { padding:clamp(28px,6vw,58px); border:1px solid #c7d7f3; border-radius:26px; background:linear-gradient(135deg,#eff6ff,#fff 62%,#fff7ed); box-shadow:0 16px 40px rgba(30,64,175,.09); }
+    .eyebrow { margin:0 0 10px; color:var(--blue); font-size:.82rem; font-weight:850; letter-spacing:.08em; text-transform:uppercase; }
+    h1,h2 { line-height:1.15; letter-spacing:-.025em; }
+    h1 { max-width:700px; margin:0; font-size:clamp(2.4rem,8vw,4.5rem); }
+    .lead { max-width:720px; color:#334155; font-size:1.1rem; }
+    .next { display:inline-flex; align-items:center; min-height:48px; margin-top:10px; padding:10px 18px; border-radius:10px; background:var(--orange); color:#fff; font-weight:800; text-decoration:none; }
+    .next:hover { background:#9a3412; }
+    .grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px; margin-top:22px; }
+    .card { padding:24px; border:1px solid var(--line); border-radius:18px; background:#fff; box-shadow:0 5px 22px rgba(15,23,42,.04); }
+    .card h2 { margin:0 0 10px; font-size:1.35rem; }
+    .lesson-link { display:block; padding:16px; border:1px solid #bfdbfe; border-radius:12px; background:#f8fbff; font-weight:800; }
+    .details { color:var(--muted); font-size:.9rem; }
+    .rotation { padding-left:22px; }
+    .rotation li + li { margin-top:7px; }
+    .review { padding:14px 16px; border-left:5px solid #ca8a04; background:#fef9c3; border-radius:0 12px 12px 0; }
+    .news-list { list-style:none; padding:0; margin:0; }
+    .news-list li { margin:0 0 10px; }
+    .news-list a { display:block; padding:12px 14px; border:1px solid #bfdbfe; border-radius:10px; background:#f8fbff; font-weight:700; text-decoration:none; }
+    .news-list a:hover { background:#eff6ff; }
+    .news-empty { color:var(--muted); font-size:.95rem; }
+    @media (max-width:720px) { .grid { grid-template-columns:1fr; } main { width:min(100% - 20px,1040px); } .hero { border-radius:16px; } }
+    @media (prefers-reduced-motion:reduce) { *,*::before,*::after { scroll-behavior:auto!important; transition:none!important; } }
+  </style>
+</head>
+<body>
+  <main>
+    <header class="hero">
+      <p class="eyebrow">Personal learning workspace</p>
+      <h1>Learn one useful thing today.</h1>
+      <p class="lead">Short, sourced lessons designed for limited focus. Each lesson includes a practical example, Q&A, and reviews after 1, 3, 7, and 21 days. Twice-daily tech briefs keep you current without overload.</p>
+      <a class="next" href="04_Business_and_Economics/BE-001_2026-07-28_what-opportunity-cost-is.html">Open today’s lesson</a>
+    </header>
+
+    <div class="grid">
+      <section class="card">
+        <h2>Current lesson</h2>
+        <a class="lesson-link" href="04_Business_and_Economics/BE-001_2026-07-28_what-opportunity-cost-is.html">BE-001: What opportunity cost is and how it helps everyday decisions</a>
+        <p class="details">Business and Economics · Level 1 · 10–15 minutes · Created 28 July 2026</p>
+      </section>
+
+      <section class="card">
+        <h2>Next review</h2>
+        <div class="review">
+          <strong>28 July 2026:</strong> Review prepared for AI-001 (+1 day) and still-pending ITF-001 / PC-001 items.
+        </div>
+        <p class="details"><a href="08_Reviews/REVIEW_2026-07-28.html">Open today’s review page</a>. Earlier: <a href="08_Reviews/REVIEW_2026-07-27.html">27 July</a>, <a href="08_Reviews/REVIEW_2026-07-26.html">26 July</a>. Future: BE-001 +1 on 29 July.</p>
+      </section>
+
+      <section class="card">
+        <h2>Tech news</h2>
+        <ul class="news-list">
+          <li><a href="tech-news/2026-07-28-AM.html">28 July 2026 · Morning brief</a></li>
+          <li><a href="tech-news/2026-07-27-PM.html">27 July 2026 · Evening brief</a></li>
+          <li><a href="tech-news/2026-07-27-AM.html">27 July 2026 · Morning brief</a></li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>Topic rotation</h2>
+        <ol class="rotation">
+          <li>IT Foundations</li>
+          <li>Productivity and Communication</li>
+          <li>AI, Data, and Modern Tech</li>
+          <li>Business and Economics</li>
+          <li>Science and Critical Thinking</li>
+          <li>Society, History, and Current Affairs</li>
+          <li>Practical Project and weekly synthesis</li>
+        </ol>
+      </section>
+
+      <section class="card">
+        <h2>How progress is saved</h2>
+        <p>Your written attempts, revealed answers, text size, and completion check are saved in this browser. The files do not use accounts, tracking, analytics, or external scripts.</p>
+        <p class="details">The Markdown files in this folder hold the curriculum state and scheduled review ledger. Tech briefs are HTML pages in <code>tech-news/</code>.</p>
+      </section>
+    </div>
+  </main>
+</body>
+</html>
