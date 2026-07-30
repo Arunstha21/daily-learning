@@ -18,28 +18,33 @@ This file records durable progress. Update it after every lesson and review. Do 
 | ITF-001 | 2026-07-14 | IT Foundations | How DNS helps your browser find a website | `01_IT_Foundations/ITF-001_2026-07-14_how-dns-finds-a-website.html` | Created; completion unconfirmed |
 | PC-001 | 2026-07-26 | Productivity and Communication | How to explain an idea clearly using Context, Point, and Example | `02_Productivity_and_Communication/PC-001_2026-07-26_explain-idea-context-point-example.html` | Created; completion unconfirmed |
 | AI-001 | 2026-07-27 | AI, Data, and Modern Tech | What “AI” usually means in the everyday tools you already use | `03_AI_Data_and_Modern_Tech/AI-001_2026-07-27_what-ai-means-in-everyday-tools.html` | Created (catch-up); completion unconfirmed |
-| BE-001 | 2026-07-28 | Business and Economics | What opportunity cost is and how it helps everyday decisions | `04_Business_and_Economics/BE-001_2026-07-28_what-opportunity-cost-is.html` | Created; completion unconfirmed |
+| BE-001 | 2026-07-28 | Business and Economics | What opportunity cost is and how it helps everyday decisions | `04_Business_and_Economics/BE-001_2026-07-28_what-opportunity-cost-is.html` | Placeholder only; full content missing; completion unconfirmed |
+| SCT-001 | 2026-07-30 | Science and Critical Thinking | Why two things happening together does not prove one caused the other | `05_Science_and_Critical_Thinking/SCT-001_2026-07-30_why-correlation-is-not-causation.html` | Created (PM catch-up); completion unconfirmed |
 
 ## Review queue
 
 | Lesson | Interval | Due date | Status | Prepared file | Score or note |
 | --- | --- | --- | --- | --- | --- |
-| ITF-001 | +1 day | 2026-07-15 | Pending (overdue) | `08_Reviews/REVIEW_2026-07-26.html` / `REVIEW_2026-07-27.html` / `REVIEW_2026-07-28.html` | Combined overdue review prepared |
-| ITF-001 | +3 days | 2026-07-17 | Pending (overdue) | `08_Reviews/REVIEW_2026-07-26.html` / `REVIEW_2026-07-27.html` / `REVIEW_2026-07-28.html` | Combined overdue review prepared |
-| ITF-001 | +7 days | 2026-07-21 | Pending (overdue) | `08_Reviews/REVIEW_2026-07-26.html` / `REVIEW_2026-07-27.html` / `REVIEW_2026-07-28.html` | Combined overdue review prepared |
+| ITF-001 | +1 day | 2026-07-15 | Pending (overdue) | `08_Reviews/REVIEW_2026-07-26.html` / `REVIEW_2026-07-27.html` / `REVIEW_2026-07-28.html` / `REVIEW_2026-07-30.html` | Combined overdue review prepared |
+| ITF-001 | +3 days | 2026-07-17 | Pending (overdue) | same | Combined overdue review prepared |
+| ITF-001 | +7 days | 2026-07-21 | Pending (overdue) | same | Combined overdue review prepared |
 | ITF-001 | +21 days | 2026-08-04 | Pending | — | — |
-| PC-001 | +1 day | 2026-07-27 | Pending | `08_Reviews/REVIEW_2026-07-27.html` / `REVIEW_2026-07-28.html` | — |
-| PC-001 | +3 days | 2026-07-29 | Pending | — | — |
+| PC-001 | +1 day | 2026-07-27 | Pending | `08_Reviews/REVIEW_2026-07-27.html` / `REVIEW_2026-07-28.html` / `REVIEW_2026-07-30.html` | — |
+| PC-001 | +3 days | 2026-07-29 | Pending (overdue) | `08_Reviews/REVIEW_2026-07-30.html` | — |
 | PC-001 | +7 days | 2026-08-02 | Pending | — | — |
 | PC-001 | +21 days | 2026-08-16 | Pending | — | — |
 | AI-001 | +1 day | 2026-07-28 | Pending | `08_Reviews/REVIEW_2026-07-28.html` | — |
-| AI-001 | +3 days | 2026-07-30 | Pending | — | — |
+| AI-001 | +3 days | 2026-07-30 | Pending | `08_Reviews/REVIEW_2026-07-30.html` | — |
 | AI-001 | +7 days | 2026-08-03 | Pending | — | — |
 | AI-001 | +21 days | 2026-08-17 | Pending | — | — |
-| BE-001 | +1 day | 2026-07-29 | Pending | — | — |
+| BE-001 | +1 day | 2026-07-29 | Pending (overdue) | `08_Reviews/REVIEW_2026-07-30.html` | — |
 | BE-001 | +3 days | 2026-07-31 | Pending | — | — |
 | BE-001 | +7 days | 2026-08-04 | Pending | — | — |
 | BE-001 | +21 days | 2026-08-18 | Pending | — | — |
+| SCT-001 | +1 day | 2026-07-31 | Pending | — | — |
+| SCT-001 | +3 days | 2026-08-02 | Pending | — | — |
+| SCT-001 | +7 days | 2026-08-06 | Pending | — | — |
+| SCT-001 | +21 days | 2026-08-20 | Pending | — | — |
 
 ## Review history
 
@@ -52,6 +57,17 @@ No lesson feedback has been recorded yet.
 When feedback is provided, record only useful learning signals: difficulty, attention, confusing terms, incorrect ideas, successful explanations, practical interests, and preferred examples. Avoid storing unnecessary personal or sensitive details.
 
 ## Daily run log
+
+### 2026-07-30 (PM catch-up)
+
+- AM runs for 29–30 missed (CONTEXT/MEMORY last at 28 AM; only a 29-AM tech brief present; BE-001 still a 59-byte placeholder).
+- Catch-up for 30 July: created Level-1 lesson `SCT-001` on correlation vs causation (association is not proof of causation; common-cause, reverse, chance alternatives). Sources: standard introductory statistics / critical-thinking framing and classic teaching illustrations.
+- Created `08_Reviews/REVIEW_2026-07-30.html` covering AI-001 +3 days and still-pending BE-001 / PC-001 / ITF-001.
+- Created `tech-news/2026-07-30-PM.html`.
+- Updated `index.html`, `CONTEXT.md`, and this `MEMORY.md`.
+- Next rotation step: Society, History, and Current Affairs.
+- No lesson or review marked completed (awaiting learner confirmation).
+- Flagged as catch-up run. BE-001 placeholder noted for possible future rewrite on request.
 
 ### 2026-07-28 (AM)
 
