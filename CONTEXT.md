@@ -1,6 +1,6 @@
 # Current learning context
 
-Last updated: 2026-07-28 (AM), Asia/Kathmandu
+Last updated: 2026-07-30 (PM catch-up), Asia/Kathmandu
 
 ## Learner profile
 
@@ -22,22 +22,29 @@ See `AGENTS.md` for full guardrails, catch-up rules, and the rule-of-thumb for w
 - Program start: 2026-07-14
 - Current difficulty: Level 1
 - Daily lesson target: 10 to 15 minutes
-- Lessons created: 4
+- Lessons created: 5
 - Reviews completed: 0 (learner confirmation required)
-- Current rotation position: 5 of 7
-- Next topic: Science and Critical Thinking
-- Next proposed lesson: `SCT-001` — (to be refined on the day)
+- Current rotation position: 6 of 7
+- Next topic: Society, History, and Current Affairs
+- Next proposed lesson: `SHA-001` — (to be refined on the day)
 - Automation note: expects AM + PM runs.
+- Note: BE-001 HTML file remains a short placeholder from the 28 July run; full content was not committed. Learner may request a rewrite if desired.
 
 ## Active lesson
+
+- ID: `SCT-001`
+- Title: Why two things happening together does not prove one caused the other
+- Date: 2026-07-30
+- File: `05_Science_and_Critical_Thinking/SCT-001_2026-07-30_why-correlation-is-not-causation.html`
+- Status: Created (PM catch-up); learner completion not yet confirmed
+
+## Previous active lessons (still pending confirmation)
 
 - ID: `BE-001`
 - Title: What opportunity cost is and how it helps everyday decisions
 - Date: 2026-07-28
 - File: `04_Business_and_Economics/BE-001_2026-07-28_what-opportunity-cost-is.html`
-- Status: Created; learner completion not yet confirmed
-
-## Previous active lessons (still pending confirmation)
+- Status: Placeholder only; full lesson content missing; completion unconfirmed
 
 - ID: `AI-001`
 - Title: What “AI” usually means in the everyday tools you already use
@@ -59,18 +66,18 @@ See `AGENTS.md` for full guardrails, catch-up rules, and the rule-of-thumb for w
 
 ## Next reviews
 
-- 2026-07-26: `ITF-001` overdue (+1 / +3 / +7) — review file: `08_Reviews/REVIEW_2026-07-26.html`
-- 2026-07-27: `PC-001` +1 day + ITF-001 still pending — review file: `08_Reviews/REVIEW_2026-07-27.html`
-- 2026-07-28: `AI-001` +1 day + still-pending earlier items — review file: `08_Reviews/REVIEW_2026-07-28.html`
-- 2026-07-29: `BE-001` +1 day; `PC-001` +3 days
-- 2026-07-30: `AI-001` +3 days
-- 2026-07-31: `BE-001` +3 days
-- 2026-08-02: `PC-001` +7 days
-- 2026-08-03: `AI-001` +7 days
-- 2026-08-04: `ITF-001` +21 days; `BE-001` +7 days
-- 2026-08-16: `PC-001` +21 days
-- 2026-08-17: `AI-001` +21 days
-- 2026-08-18: `BE-001` +21 days
+- 2026-07-26 / 27 / 28: ITF-001 / PC-001 / AI-001 earlier intervals still pending — see REVIEW files
+- 2026-07-29: BE-001 +1 day; PC-001 +3 days (overdue)
+- 2026-07-30: AI-001 +3 days — review file: `08_Reviews/REVIEW_2026-07-30.html` (also folds overdue items)
+- 2026-07-31: BE-001 +3 days; SCT-001 +1 day
+- 2026-08-02: PC-001 +7 days; SCT-001 +3 days
+- 2026-08-03: AI-001 +7 days
+- 2026-08-04: ITF-001 +21 days; BE-001 +7 days
+- 2026-08-06: SCT-001 +7 days
+- 2026-08-16: PC-001 +21 days
+- 2026-08-17: AI-001 +21 days
+- 2026-08-18: BE-001 +21 days
+- 2026-08-20: SCT-001 +21 days
 
 ## Tech-news tracking
 
@@ -79,6 +86,8 @@ See `AGENTS.md` for full guardrails, catch-up rules, and the rule-of-thumb for w
 - 2026-07-27 AM: created (catch-up)
 - 2026-07-27 PM: created
 - 2026-07-28 AM: created
+- 2026-07-29 AM: created
+- 2026-07-30 PM: created (this catch-up run)
 - Linked from `index.html`.
 
 ## Adjustment rules
@@ -90,6 +99,18 @@ See `AGENTS.md` for full guardrails, catch-up rules, and the rule-of-thumb for w
 - Never backfill missed lessons in bulk.
 
 ## Run log
+
+### 2026-07-30 (PM catch-up run)
+
+- AM run for 29 and 30 appears to have been missed (only a 29-AM tech brief existed; CONTEXT/MEMORY last fully updated 28 AM; BE-001 remained a 59-byte placeholder).
+- This PM run performed catch-up for 30 July: created the day’s lesson, due/overdue reviews, evening tech brief, and light reinforcement via the new lesson’s built-in Q&A.
+- Created Level-1 lesson `SCT-001` in `05_Science_and_Critical_Thinking/` on why correlation is not causation (association vs causal claim; common-cause / reverse / chance alternatives).
+- Created review file `08_Reviews/REVIEW_2026-07-30.html` covering AI-001 +3 days and still-pending BE-001 / PC-001 / ITF-001 items.
+- Created `tech-news/2026-07-30-PM.html` (Microsoft / Meta earnings highlights, EU AI gigafactories bidding, Samsung chip-shortage outlook to 2028, xAI lawsuit on nudification law, Anthropic Claude chat-leak response, Google Pay Gemini spending assistant).
+- Updated `index.html`, this `CONTEXT.md`, and `MEMORY.md`.
+- Next rotation step: Society, History, and Current Affairs.
+- No lesson or review marked completed (awaiting learner confirmation).
+- Flagged as catch-up run. Note on BE-001 placeholder left for learner decision.
 
 ### 2026-07-28 (AM run)
 
